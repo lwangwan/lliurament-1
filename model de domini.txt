@@ -1,0 +1,69 @@
+@startuml
+object TotSerie
+object Data {
+    dia
+    mes
+    any
+    hora
+}
+object Client
+object ClientRegistrat {
+    usuari
+    password
+}
+object Registre{
+    nom
+    nacionalitat
+
+}
+object ClientNoRegistrat
+object Serie{
+    titol
+    descripcio
+}
+object Artista{
+    nom
+}
+object Director{
+   nacionalitat
+}
+object Actor{
+    nacionalitat
+}
+object Productora{
+    identificacio
+    any de creacio
+}
+object Temporada{
+     cantidad 
+}
+object Episodi{
+    nom
+    duracio
+    idioma
+    descripcio 
+}
+object Valoracio
+
+Artista <|-- Director
+Artista <|-- Actor
+Artista <|-- Productora
+
+Client <|-- ClientRegistrat
+Client <|-- ClientNoRegistrat
+
+ClientRegistrat "1" -- "1" Registre
+Registre "1" -- "1" Data
+
+
+TotSerie "1" -- "*" Client : té 
+TotSerie "1" -- "*" Serie : gestiona 
+
+
+Serie "1" -- "1..*" Artista: format per
+Serie "1" -- "1..*" Temporada: té
+
+Temporada "1" -- "1..*" Episodi
+Episodi "1" -- "1" Data
+Episodi "1" -- "1..*" Valoracio
+@enduml
