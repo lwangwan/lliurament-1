@@ -1,11 +1,11 @@
-Índice
-Diagramas de casos de uso textuales de los casos de uso que tengan includes y excludes………….
-Modelo de dominio………….………….………….………….………….………….………….………….………….…………..
-Historias de usuario de los casos de uso “Ver episodio” y “Valorar episodio” ………….………….…….
-Dudas, problemas y soluciones………….………….………….………….………….………….………….………….……..
-Observaciones………….………….………….………….………….………….………….………….………….………….……….
-Posibles mejoras………….………….………….………….………….………….………….………….………….………….…….
-Conclusiones de la práctica………….………….………….………….………….………….………….………….………….
+Ãndice
+Diagramas de casos de uso textuales de los casos de uso que tengan includes y excludesâ€¦â€¦â€¦â€¦.
+Modelo de dominioâ€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦..
+Historias de usuario de los casos de uso â€œVer episodioâ€ y â€œValorar episodioâ€ â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦.
+Dudas, problemas y solucionesâ€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦..
+Observacionesâ€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦.
+Posibles mejorasâ€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦.
+Conclusiones de la prÃ¡cticaâ€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.â€¦â€¦â€¦â€¦.
 
 
 
@@ -26,30 +26,30 @@ Conclusiones de la práctica………….………….………….………….………….………….………….………….………….
 
 
 Diagramas de casos de uso textuales de los casos de uso que tengan includes y excludes
-CU2: Veure detall de la sèrie
-Breve descripción: Este caso de uso permite al usuario ver: el título de la serie, una breve descripción,
-los artistas que participan (director, actores y productora) y sus datos; el número de temporadas y el número de episodios
-por temporada; el título del episodio, la duración, el idioma original, una breve descripción y la
-fecha en que se emitió por primera vez.
+CU2: Veure detall de la sÃ¨rie
+Breve descripciÃ³n: Este caso de uso permite al usuario ver: el tÃ­tulo de la serie, una breve descripciÃ³n,
+los artistas que participan (director, actores y productora) y sus datos; el nÃºmero de temporadas y el nÃºmero de episodios
+por temporada; el tÃ­tulo del episodio, la duraciÃ³n, el idioma original, una breve descripciÃ³n y la
+fecha en que se emitiÃ³ por primera vez.
 
 
 Actores: cliente registrado
-Precondiciones: El cliente ha abierto el catálogo.
+Precondiciones: El cliente ha abierto el catÃ¡logo.
 
 Flujo de eventos:El caso de uso se inicia cuando el cliente selecciona una serie.
-Flujo básico:
+Flujo bÃ¡sico:
 1.	El cliente selecciona una serie.
-2.	El sistema muestra la ventana con la información de la serie.
+2.	El sistema muestra la ventana con la informaciÃ³n de la serie.
 	a)
 	......
 
 3.	El cliente lee los detalles de la serie.
-4.	El cliente sale de la ventana y vuelve a la pantalla del catálogo. El caso de uso finaliza.
+4.	El cliente sale de la ventana y vuelve a la pantalla del catÃ¡logo. El caso de uso finaliza.
 
 Flujo alternativo: 
 4 a. El cliente registrado selecciona ver un episodio.
 	1.	El sistema carga el episodio.
-	2.	El cliente cierra la ventana de reproducción.
+	2.	El cliente cierra la ventana de reproducciÃ³n.
 	3.	El sistema vuelve a la pantalla de detalle de la serie.
 
 Postcondiciones: (Actualizar "Big Data") VS Ninguna
@@ -57,18 +57,18 @@ Postcondiciones: (Actualizar "Big Data") VS Ninguna
 
 
 
-CU3: Veure catàleg de series
-Breve descripción: Al entrar en la aplicación, el cliente dispone del catálogo de series disponibles.
+CU3: Veure catÃ leg de series
+Breve descripciÃ³n: Al entrar en la aplicaciÃ³n, el cliente dispone del catÃ¡logo de series disponibles.
 Actores: cliente no registrado, cliente registrado
 Precondiciones: Ninguna
 
-Flujo de eventos: El caso de uso se inicia cuando el cliente entra en la aplicación.
-Flujo básico:
-1.	El cliente abre la aplicación.
+Flujo de eventos: El caso de uso se inicia cuando el cliente entra en la aplicaciÃ³n.
+Flujo bÃ¡sico:
+1.	El cliente abre la aplicaciÃ³n.
 2.	El sistema muestra la ventana con todas las series que dispone.
-3.	El cliente ve el catálogo.
-4.	El cliente selecciona salir de la aplicación.
-5. 	El sistema cierra la aplicación y finaliza el caso de uso.
+3.	El cliente ve el catÃ¡logo.
+4.	El cliente selecciona salir de la aplicaciÃ³n.
+5. 	El sistema cierra la aplicaciÃ³n y finaliza el caso de uso.
 
 Flujo alternativo: CU2
 4 a. El cliente selecciona ver detalles de una serie. 
@@ -78,48 +78,51 @@ Postcondiciones: Ninguna
 
 
 CU6: Veure episodi
-Breve descripción: Al entrar en los detalles de una serie, el cliente selecciona un capítulo.
+Breve descripciÃ³n: Al entrar en los detalles de una serie, el cliente selecciona un capÃ­tulo.
 Actor: cliente registrado 
 Precondiciones: Haber seleccionado una serie
 Flujo de eventos: El caso de uso se inicia cuando el cliente selecciona un episodio para verlo.
 
-Flujo básico:
+Flujo bÃ¡sico:
 1.	El cliente selecciona el episodio de la serie que quiere ver.
 2.	El sistema muestra una nueva ventana donde se carga el episodio.
-3.	El cliente ve el capítulo.
+3.	El cliente ve el capÃ­tulo.
 4.	El cliente sale de la ventana.
 
-5. 	El sistema muestra la opción para valorar el episodio.
+5. 	El sistema muestra la opciÃ³n para valorar el episodio.
 6.	Incluir caso de uso "Valorar episodi (CU7)" y el caso de uso finaliza.
 
 
 Flujo alternativo:
-6.a	En el paso 6 del flujo básico, el cliente puede seleccionar salir y el 
+6.a	En el paso 6 del flujo bÃ¡sico, el cliente puede seleccionar salir y el 
 	caso de uso finaliza.
-Postcondiciones: Se guarda la información (de visualización y valoración).
+Postcondiciones: Se guarda la informaciÃ³n (de visualizaciÃ³n y valoraciÃ³n).
 
 
 
 
 CU7: Valorar episodi
-Breve descripción: El cliente ha visualizado el episodio y se le muestra la opción de valorarlo.
+Breve descripciÃ³n: El cliente ha visualizado el episodio y se le muestra la opciÃ³n de valorarlo.
 Actor: cliente registrado 
 Precondiciones: Haber visto el episodio
 
 Flujo de eventos: El caso de uso se inicia cuando el cliente termina de ver un episodio.
 
-Flujo básico:
+Flujo bÃ¡sico:
 1.	El cliente termina de ver el episodio
-2.	El sistema muestra la opción de valorar el episodio:
+2.	El sistema muestra la opciÃ³n de valorar el episodio:
 	a) indica el identificador del usuario
-	b) valoración del 1 al 5.
+	b) valoraciÃ³n del 1 al 5.
 3.	El cliente valora el episodio.
-4.	El sistema registra la valoración.
-5.	El cliente selecciona salir de la aplicación.
-6. 	El sistema cierra la aplicación y finaliza el caso de uso.
+4.	El sistema registra la valoraciÃ³n.
+5.	El cliente selecciona salir de la aplicaciÃ³n.
+6. 	El sistema cierra la aplicaciÃ³n y finaliza el caso de uso.
+
+Flujo alternativo:
+3.a En el paso 3 del flujo bÃ¡sico, el cliente puede seleccionar el botÃ³n cancelar y el caso de uso finaliza.
 
 
-Postcondiciones: La valoración queda guardada en el sistema.
+Postcondiciones: La valoraciÃ³n queda guardada en el sistema.
 
 
 
@@ -134,18 +137,18 @@ Historias de usuario de los casos de uso
 
 Como usuario registrado
 
-Quiero ver un capítulo de una serie
+Quiero ver un capÃ­tulo de una serie
 
 Para entretenerme	Conversation
 
-¿Qué pasa si no termina de ver el episodio?
+Â¿QuÃ© pasa si no termina de ver el episodio?
 
-¿Qué pasa si quiere cargar un capítulo mientras ve otro?	Confirmation
-
-
+Â¿QuÃ© pasa si quiere cargar un capÃ­tulo mientras ve otro?	Confirmation
 
 
-La opción de abrir dos canales streaming no es posible
+
+
+La opciÃ³n de abrir dos canales streaming no es posible
 
 
 
@@ -156,13 +159,13 @@ Card
 
 Como usuario registrado
 
-Quiero valorar un capítulo
+Quiero valorar un capÃ­tulo
 
-Para expresar mi opinión	Conversation
+Para expresar mi opiniÃ³n	Conversation
 
-¿Qué pasa si no ha terminado de ver el episodio?	Confirmation
+Â¿QuÃ© pasa si no ha terminado de ver el episodio?	Confirmation
 
-La opción de valorar un episodio sólo está disponible si lo has visto entero
+La opciÃ³n de valorar un episodio sÃ³lo estÃ¡ disponible si lo has visto entero
 
 
 
