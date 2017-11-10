@@ -55,13 +55,16 @@ Client <|-- ClientNoRegistrat
 ClientRegistrat "1" -- "1" Registre
 Registre "1" -- "1" Data
 
+Client "1" - "1..*" Serie: consultar
 
-TotSerie "1" -- "*" Client : té 
-TotSerie "1" -- "*" Serie : gestiona 
+
+TotSerie "1" o-- "*" Client : tÃ© 
+
+TotSerie "1" o-- "*" Serie : gestiona 
 
 
 Serie "1" -- "1..*" Artista: format per
-Serie "1" -- "1..*" Temporada: té
+Serie "1" -- "1..*" Temporada: tÃ©
 
 Temporada "1" -- "1..*" Episodi
 Episodi "1" -- "1" Data
