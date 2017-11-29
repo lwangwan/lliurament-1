@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <title>Comprobar IP</title>
+    </head>
+    <body>
+        
+        
+<h1>REQ-002 Comprobar IP</h1>
+
+<p>
+   Se comprueba la direción IP de un cliente. Si está dentro del rango permitido, puede ver el episodio.
+   En caso contrario, no se le permite visualizarlo.
+</p>
+
+<div class="example">
+
+<h3>Examples</h3>
+
+<p>
+
+El cliente tiene una dirección IP asociada. En este caso
+el usuario con ip "10.133.32.49" pasará el test. Cualquier otra combinación será fallida.
+
+</p>
+
+<table concordion:execute="#valid=getEstadoIP(#ip)">
+
+<tr>
+
+<th concordion:set="#ip">IP</th>
+<th concordion:assertEquals="#valid">Sucess</th>
+
+</tr>
+
+<tr>
+<td>10.133.32.50</td>
+<td>no</td>
+
+</tr>
+
+<tr>
+
+<td>10.133.42.49</td>
+<td>no</td>
+
+</tr>
+
+<tr>
+
+<td>10.133.32.49</td>
+<td>yes</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>

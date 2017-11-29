@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <title>Comprobar Registro</title>
+    </head>
+    <body>
+        
+        
+<h1>REQ-001 Comprobar Registro</h1>
+
+<p>
+    La opción de ver un episodio como usuario no registrado no es posible.
+   Si está registrado se permite la visualización del episodio.
+   Si no está registrado, permite la opción de registrarse.
+</p>
+
+<div class="example">
+
+<h3>Examples</h3>
+
+<p>
+
+El cliente está registrado si existe un nombre de usuario guardado en el sistema. En este caso
+el usuario con nombre "nuevo" pasará el test. Cualquier otra combinación será fallida.
+
+</p>
+
+<table concordion:execute="#valid=getEstadoLogIn(#usuari)">
+
+<tr>
+
+<th concordion:set="#usuari">Username</th>
+<th concordion:assertEquals="#valid">Sucess</th>
+
+</tr>
+
+<tr>
+
+<td>john</td>
+<td>no</td>
+
+</tr>
+
+<tr>
+
+<td>admin</td>
+<td>no</td>
+
+</tr>
+
+<tr>
+
+<td>nuevo</td>
+<td>yes</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
